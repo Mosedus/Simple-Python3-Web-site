@@ -15,7 +15,7 @@ class SimonsServer(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     webserver = HTTPServer((hostname, serverPort), SimonsServer)
-    print("Server started http://{}{}".format(hostname, serverPort))
+    print("Server started http://{}:{}".format(hostname, serverPort))
 
     try:
         webserver.serve_forever()
